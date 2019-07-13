@@ -5,31 +5,55 @@
   <meta charset="utf-8">
   <title>About | Jessica Bradford</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Assistant|PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|PT+Serif:400,700&display=swap"
+    rel="stylesheet">
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav>
-    <a href="index.html">
-      <img src="assets/J.png" alt="Jessica Bradford's logo" width="150" />
-    </a>
-    <ul>
-      <li><a href="index.html#featured-work">WORK</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-  </nav>
-  <header>
-    <h1>Hello! I'm Jess.</h1>
-    <a href="assets/Resume.pdf" target="_blank">RESUME</a>
+  <header class="center">
+      <nav class="black-background top-menu white-font">
+          <!-- mobile bar -->
+          <a class="content logo" href="index.html">
+            <img src="assets/J.png" alt="Jessica Bradford's logo" width="47" />
+          </a>
+          <div class="content menu-icon icons white-font">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </div>
+          <!-- desktop bar/menu -->
+          <ul class="desktop-menu white-font">
+            <li><a href="#index.html#featured-work">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          <!-- mobile menu -->
+          <section class="menu black-background">
+            <div class="menu-grid">
+              <div class="closeBtn content white-font">
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </div>
+              <ul class="content menu-ul">
+                <li class="menu-links"><a class="menu-links white-font" href="about.html">ABOUT</a></li>
+                <li class="menu-links"><a class="menu-links white-font" href="#contact">CONTACT</a></li>
+                <li class="menu-links"><a class="menu-links white-font" href="index.html#featured-work">WORK</a></li>
+              </ul>
+            </div>
+          </section>
+        </nav>
+
+    <section>
+      <h1 class="h1-home">Hello! I'm Jess.</h1>
+      <a class="black-font" href="assets/Resume.pdf" target="_blank">RESUME</a>
+    </section>
   </header>
   <main>
     <section>
-      <p>
+      <p class="content margin-top-bottom">
         I currently live in the San Francisco Bay area but am originally from Utah. My husband, daughter and I moved
         here last year. When I was a child my family wasn’t very well off, and this forced me to be creative. When I was
         little my mom used to create meals fit for kings based off a few small ingredients. She would create something
@@ -54,36 +78,40 @@
       </p>
     </section>
   </main>
-  <footer>
+  <footer class="black-background white-font">
     <nav id="contact">
-      <ul>
+      <ul class="content footer">
         <li>
-          <a href="mailto:bradfordjess13@gmail.com?subject=Design%20Inquiry" target="_blank">
-            <i class="fas fa-envelope-square" aria-hidden="true"></i>
-            bradfordjess13@gmail.com
+          <a class="white-font" href="mailto:bradfordjess13@gmail.com?subject=Design%20Inquiry" target="_blank">
+            <i class="fas fa-envelope-square icons" aria-hidden="true"></i>
+            <p class="mobile">bradfordjess13@gmail.com</p>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jessbradford/" target="_blank">
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-            jessbradford
+          <a class="white-font" href="https://www.linkedin.com/in/jessbradford/" target="_blank">
+            <i class="fab fa-linkedin icons" aria-hidden="true"></i>
+            <p class="mobile">jessbradford</p>
           </a>
         </li>
         <li>
-          <a href="https://dribbble.com/jbradford2220" target="_blank">
-            <i class="fab fa-dribbble-square" aria-hidden="true"></i>
-            jbradford2220
+          <a class="white-font" href="https://dribbble.com/jbradford2220" target="_blank">
+            <i class="fab fa-dribbble-square icons" aria-hidden="true"></i>
+            <p class="mobile">jbradford2220</p>
           </a>
         </li>
         <li>
-          <a href="https://github.com/jessbradford" target="_blank">
-            <i class="fab fa-github-square" aria-hidden="true"></i>
-            jessbradford
+          <a class="white-font" href="https://github.com/jessbradford" target="_blank">
+            <i class="fab fa-github-square icons" aria-hidden="true"></i>
+            <p class="mobile">jessbradford</p>
           </a>
         </li>
       </ul>
     </nav>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
