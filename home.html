@@ -16,11 +16,11 @@
 </head>
 
 <body>
-  <header class="black-background center home-header white-font">
+  <header class="center home-header white-font">
     <nav class="top-menu">
       <!-- mobile bar -->
       <a class="content tablet-content logo" href="home.html">
-        <img class="logo-image" src="assets/J.png" alt="Jessica Bradford's logo" />
+        <img class="j-white-logo" src="assets/j-white.png" alt="Jessica Bradford's logo" />
       </a>
       <div class="content tablet-content menu-icon icons white-font">
         <i class="fas fa-bars" aria-hidden="true"></i>
@@ -29,7 +29,7 @@
       <ul class="desktop-menu white-font">
         <li><a class="white-font" href="#featured-work">WORK</a></li>
         <li><a class="white-font" href="about.html">ABOUT</a></li>
-        <li><a class="white-font" href="#contact">CONTACT</a></li>
+        <li><a class="white-font" href="#contact" id="contact-link">CONTACT</a></li>
       </ul>
       <!-- mobile menu -->
       <section class="menu black-background">
@@ -39,7 +39,7 @@
           </div>
           <ul class="content tablet-content menu-ul">
             <li class="menu-links"><a class="menu-links white-font" href="about.html">ABOUT</a></li>
-            <li class="menu-links"><a class="menu-links white-font" href="#contact">CONTACT</a></li>
+            <li class="menu-links"><a class="menu-links white-font" href="#contact" id="contact-link">CONTACT</a></li>
             <li class="menu-links"><a class="menu-links white-font" href="home.html#featured-work">WORK</a></li>
           </ul>
         </div>
@@ -55,27 +55,28 @@
     </section>
   </header>
   <main class="main">
-    <p class="center desktop-content featured margin-top-bottom" id="featured-work">FEATURED WORK</p>
-    <section class="black-background work-container">
+    <h6 class="center desktop-content featured margin-top-bottom" id="featured-work">FEATURED WORK</h6>
+    <section class="work-container">
       <div class="featured-work">
         <img class="featured-work-image" src="assets/collabscreenshot.jpg"
           alt="screenshot of collab homepage and collab editor" />
-        <div class="case-study-desc content desktop-left stretch-center white-font">
+        <div class="case-study-desc content desktop-left stretch-center">
           <h4>Collab Case Study</h4>
           <p>
             Many writers are faced with the problem of the same people reviewing and editing. Collab gives writers the
             opportunity to collaborate with other writers and editors and also acts as a blog spot to post their work.
           </p>
-          <div class="button case-study-button center">
-            <a class="white-font" href='collab.html'>CASE STUDY</a>
-          </div>
+          <button class="button case-study-button center white-font" onclick="window.location.href='collab.html'">
+            CASE STUDY
+          </button>
         </div>
+      </div>
       </div>
     </section>
   </main>
-  <footer class="black-background footer-padding white-font">
+  <footer class="black-background footer-padding white-font" id="contact">
     <h5>Let's connect!</h5>
-    <nav id="contact">
+    <nav>
       <ul class="content desktop-content tablet-content footer">
         <li>
           <a class="white-font" href="https://www.linkedin.com/in/jessbradford/" target="_blank">
@@ -107,6 +108,7 @@
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <script src="menu.js"></script>
+  <script src="scroll.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144131449-1"></script>
   <script>
