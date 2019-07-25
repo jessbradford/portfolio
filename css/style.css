@@ -259,13 +259,9 @@
 /* Menu */
 
 @media (min-width: 1025px) {
-  .about {
-    display: grid;
-    grid-template-columns: 496px 50%;
-    grid-row-gap: 55px;
-  }
+  
   .about-img {
-    width: 460px;
+    width: 325px;
   }
   .desktop-menu {
     display: grid;
@@ -280,6 +276,10 @@
 }
 
 @media (min-width: 500px) {
+  .about {
+    float: left;
+    margin-right: 20px;
+  }
   .mobile {
     display: inline;
   }
@@ -392,19 +392,6 @@
   .featured {
     text-align: left;
   }
-  .featured-work {
-    align-items: center;
-    grid-template-columns: 466px 43%;
-    grid-gap: 12px;
-    justify-content: start;
-    margin-left: 120px;
-    margin-right: 120px;
-    text-align: left;
-  }
-  .featured-work-image {
-    height: 296px;
-    width: 456px;
-  }
   .form {
     width: 565px;
   }
@@ -435,7 +422,18 @@
   }
 }
 
-@media (min-width: 499px) {
+@media (min-width: 500px) {
+  .featured-work {
+    align-items: center;
+    grid-template-columns: 45% 55%;
+    grid-gap: 12px;
+    height: 310px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .featured-work-image {
+    width: 100%;
+  }
   .survey {
     display: grid;
     grid-template-columns: 47% 39%;
@@ -452,12 +450,7 @@
 
 @media (min-width: 500px) and (max-width: 1024px) {
   .about-img {
-    width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
-    display: grid;
-    margin-top: 30px;
+    width: 300px;
   }
   .auto {
     margin: auto;
@@ -467,21 +460,6 @@
   }
   .featured {
     text-align: left;
-  }
-  .featured-work {
-    align-items: center;
-    grid-template-columns: 319px 46%;
-    grid-gap: 12px;
-    justify-content: start;
-    margin-left: 45px;
-    margin-right: 45px;
-    text-align: left;
-    height: 325px;
-  }
-  .featured-work-image {
-    height: 220px;
-    width: 318px;
-    justify-self: center;
   }
   .form {
     width: 530px;
@@ -494,10 +472,11 @@
 
 @media (min-width: 320px) and (max-width: 500px) {
   .about-img {
-    width: 337px;
+    width: 100%;
     justify-self: center;
     display: grid;
     margin: auto;
+    margin-top: 16px;
   }
   .button {
     margin: auto;
@@ -566,11 +545,20 @@ body {
   border: none;
   font-size: 14px;
   font-weight: bold;
+  width: 100px;
 }
 
 .button:hover {
   background-color: #6834D7;
   font-size: 15px;
+}
+
+.button-resume {
+  background-color: #474648;
+}
+
+.button-resume:hover {
+  background-color: #353435;
 }
 
 .button-width{
@@ -658,7 +646,12 @@ body {
   background-image: url(../assets/Group.png);
   background-size: 100% 190%;
 }
-
+.menu-background {
+  background: linear-gradient(63deg, #8349FF, #7305FF 70.71%);
+  background-image: url(../assets/Group.png);
+  background-size: 158% 232%;
+  opacity: 0.95;
+}
 .icons {
   font-size: 24px;
   justify-self: end;
@@ -708,7 +701,7 @@ ul {
     font-size: 96px;
   }
   .h1-home {
-    margin-top: 56px;
+    margin-top: 10px;
   }
   h4 {
     font-size: 34px;
