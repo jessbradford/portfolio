@@ -1,7 +1,7 @@
 /* Case studies Styling */
 @media (min-width: 1025px) {
   .case-study-main-grid {
-    grid-template-rows: 285px 300px 475px 617px 782px 400px 312px 880px 1108px 700px 453px
+    grid-template-rows: 270px 225px 475px 485px 760px 308px 400px 960px 850px 810px 360px;
   }
   .clickable-prototype {
     display: grid;
@@ -46,8 +46,7 @@
     align-content: center;
   }
   .user-flow-img {
-    height: 272px;
-    width: 466px;
+    width: 100%;
   }
   .vertical-divider {
     align-self: center;
@@ -367,13 +366,10 @@
     margin-left: 120px;
     margin-right: 120px;
   }
-  .desktop-word {
-    max-width: 600px;
-  }
   .desktop-text-center {
     text-align: center;
   }
-  .desktop-left {
+  #desktop-left {
     justify-items: left;
   }
   .desktop-stretch {
@@ -422,6 +418,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .desktop-word {
+    max-width: 600px;
+  }
+}
+
 @media (min-width: 500px) {
   .featured-work {
     align-items: center;
@@ -455,7 +457,7 @@
   .auto {
     margin: auto;
   }
-  .desktop-left {
+  #desktop-left {
     justify-items: left;
   }
   .featured {
@@ -507,9 +509,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
-  .footer {
-    width: 274px;
-  }
   .home-header {
     height: 345px;
   }
@@ -554,15 +553,16 @@ body {
 }
 
 .button-resume {
-  background-color: #474648;
+  background-color: #fff;
+  color: #8349FF;
 }
 
 .button-resume:hover {
-  background-color: #353435;
+  background-color: #F2F0F4;
 }
 
 .button-width{
-  width: 165px;
+  width: 195px;
 }
 
 #button-top {
@@ -578,7 +578,7 @@ body {
   display: inline-block;
   height: 60px;
   width: 60px;
-  box-shadow: 0px 4px 4px #474648;;
+  box-shadow: 0px 4px 4px #00000040;
 }
 
 #button-top:hover {
@@ -591,7 +591,7 @@ body {
 }
 
 .wide-button {
-  width: 193px;
+  width: 235px;
 }
 
 .center {
@@ -614,7 +614,8 @@ body {
   display: grid;
   grid-gap: 20px;
   justify-content: center;
-  padding-bottom: 16px;
+  margin-top: 40px;
+  padding-bottom: 75px;
   padding-top: 16px;
 }
 
