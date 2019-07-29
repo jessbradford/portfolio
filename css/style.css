@@ -257,7 +257,6 @@
 /* Menu */
 
 @media (min-width: 1025px) {
-  
   .about-img {
     width: 410px;
   }
@@ -577,12 +576,6 @@ body {
   width: 60px;
   box-shadow: 0px 4px 4px #00000040;
 }
-
-#button-top:hover {
-  background-color: #6834D7;
-  font-size: 15px;
-}
-
 
 #button-top:hover {
   background-color: #6834D7;
